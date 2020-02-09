@@ -1,35 +1,44 @@
-div:nth-child(1){
-    background:red;
-}
- 
-div:nth-last-child(2){
-    background:#AB82FF;
-}
- 
-li:nth-of-type(1){
+:target{
     color:green;
+    font-weight:bold;
 }
  
-li:nth-last-of-type(1){
-    color:yellow;
+::selection{
+    color:red;
 }
  
-div:last-child{
-    background:orange;
+:empty{
+    border:solid 1px;
+    height:50px;
+    background:gray;
 }
  
-div:first-of-type{
-    border:solid 5px green;
-}
- 
-div:last-of-type{
-    border:solid 5px brown;
-}
- 
-p:only-child{
-    font-size:30px;
-}
- 
-ul:only-of-type{
+input:checked{
     text-decoration:underline;
+}
+ 
+h1
+{
+    font-family:"Courier New";
+}
+ 
+:not(h1)
+{
+    font-family:"Arial";
+}
+ 
+input~span{
+    color: orange;
+}
+ 
+input:disabled{
+    border:solid 1px red;
+    background-color: silver;
+    height:25px;
+}
+ 
+input:enabled{
+    border:solid 1px blue;
+    background-color: #fff;
+    height:25px;
 }
